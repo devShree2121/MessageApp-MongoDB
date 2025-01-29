@@ -1,0 +1,25 @@
+{
+  "name": "messageapp-mongodb",
+  "version": "1.0.0",
+  "description": "\"Messaging-app with mongoDB\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devShree2121/MessageApp-MongoDB.git"
+  },
+  "author": "Shishir Regmi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devShree2121/MessageApp-MongoDB/issues"
+  },
+  "homepage": "https://github.com/devShree2121/MessageApp-MongoDB#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.9.5"
+  }
+}
