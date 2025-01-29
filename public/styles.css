@@ -1,0 +1,50 @@
+.message-box {
+    position: relative;
+    padding: 15px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+.message-box .buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Adds space between the buttons */
+}
+
+.message-box .buttons button {
+    padding: 8px 12px; /* Optional: Adjust the padding for buttons */
+    background-color: lightblue; /* Default background for both buttons */
+}
+
+.message-box .buttons .delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.message-box .buttons .edit-btn {
+    background-color: lightgreen;
+    color: black;
+}
+
+.message {
+    margin-top: 20px;
+}
