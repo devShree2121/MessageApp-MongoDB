@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>All Chats</title>
+</head>
+<body>
+    
+<h1> All the chats </h1>
+<form action="/chats/new" method="get">
+    <button class="new" > Add new chat</button> 
+</form>
+<br>
+ 
+<% for (chat of chats) { %>
+    <div class="message-box">
+        <p class="from">From: <b><%= chat.from %></b></p>
+        
+        <!-- Buttons container (Edit and Delete) -->
+        <div class="buttons">
+            <a href="http://localhost:8080/chats/<%= chat._id %>/edit">
+                <button class="edit-btn">Edit</button>
+            </a>
+            <form action="/chats/<%= chat._id %>?_method=DELETE" method="POST">
+                <button type="submit" class="delete-btn">Delete</button>
+            </form>
+        </div>
+
+        <div class="message">Message: <%= chat.message %></div>
+        <p class="to">To: <b><%= chat.to %></b></p>
+    </div>
+    <br>
+<% } %>
+
+
+
+</body>
+</html>
+
